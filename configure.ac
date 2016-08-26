@@ -374,6 +374,8 @@ if test "$inetutils_cv_var_h_errno" = yes; then
   AC_CHECK_DECLS([h_errno],,, [#include <netdb.h>])
 fi
 
+AM_GNU_GETTEXT_VERSION(0.17)
+
 # See if the system has hstrerror, and replace it if not
 AC_CHECK_FUNC(hstrerror, , [gl_LIBOBJ(hstrerror)])
 if test "$ac_cv_func_hstrerror" = yes; then
